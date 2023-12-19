@@ -22,4 +22,13 @@ public class Car {
     public int getTopSpeed() {
         return topSpeed;
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", model='" + model + '\'' +
+                ", topSpeed=" + topSpeed +
+                '}';
+    }
 }

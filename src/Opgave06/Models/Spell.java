@@ -17,4 +17,11 @@ public class Spell {
         return description;
     }
 
+    @Override
+    public String toString() {
+        return "Spell{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

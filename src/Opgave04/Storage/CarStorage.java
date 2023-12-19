@@ -16,5 +16,22 @@ public class CarStorage {
         cars.add(new Car("Mercedes", "CLE Coupé", 250));
         cars.add(new Car("Mercedes", "EQE", 210));
     }
+    public Car higherTopSpeed(int speedCompare) {
+        for (Car car: cars) {
+            if (car.getTopSpeed() > speedCompare)
+                return car;
+        }
+        return null;
+    }
+
+    public Car matchingBrand(String brand) {
+        for (Car car: cars) {
+            if (car.getBrand().equals(brand))
+                return car;
+        }
+        return null;
+    }
+
+
 
 }
